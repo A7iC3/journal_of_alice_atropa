@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 84px 42px;
+  border: solid 4px;
+}
+
+.content__info {
+  font-size: 16px;
+  display: none;
+}
+
+.content__info_active {
+  display: block;
+}

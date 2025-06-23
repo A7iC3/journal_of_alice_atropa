@@ -1,11 +1,20 @@
 @font-face {
   font-family: "Silkscreen";
-  src: url("./Silkscreen-Regular.ttf");
+  src: url("./silkscreen-regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Silkscreen";
-  src: url("./Silkscreen-Bold.ttf");
+  src: url("./silkscreen-bold.ttf") format("truetype");
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DotGothic16";
+  src: url("./dotgothic16-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
 }

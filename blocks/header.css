@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 16px;
+}
+
+.header__header {
+  font-size: 30px;
+  padding: 10px 0 0;
+}
+
+.header__subheader {
+  font-size: 30px;
+  padding: 0 0 42px;
+}
