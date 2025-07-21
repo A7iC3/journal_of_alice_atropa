@@ -18,3 +18,10 @@
   font-weight: 400;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "NovaSquare";
+  src: url("./novasquare-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}

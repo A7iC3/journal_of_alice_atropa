@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Journal of Alice Atropa</title>
-    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </head>
   <body>
     <div class="page text_en">
@@ -24,60 +24,119 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__tab">
-              <button class="nav__btn nav_active" id="tab-home">
-                <span class="nav__tab-title1">Tutorial</span>
-                <span class="nav__tab-title2">Home</span>
+              <button class="nav__btn" data-tab="#home">
+                <span class="nav__btn-title1">Tutorial</span>
+                <span class="nav__btn-title2">Home</span>
               </button>
             </li>
             <li class="nav__tab">
-              <button class="nav__btn" id="tab-about">
-                <span class="nav__tab-title1">Lore</span>
-                <span class="nav__tab-title2">About</span>
+              <button class="nav__btn" data-tab="#about">
+                <span class="nav__btn-title1">Lore</span>
+                <span class="nav__btn-title2">About</span>
               </button>
             </li>
             <li class="nav__tab">
-              <button class="nav__btn" id="tab-portfolio">
-                <span class="nav__tab-title1">Dungeons</span>
-                <span class="nav__tab-title2">Portfolio</span>
+              <button class="nav__btn" data-tab="#portfolio">
+                <span class="nav__btn-title1">Dungeons</span>
+                <span class="nav__btn-title2">Portfolio</span>
               </button>
             </li>
             <li class="nav__tab">
-              <button class="nav__btn" id="tab-pricing">
-                <span class="nav__tab-title1">Loot</span>
-                <span class="nav__tab-title2">Pricing</span>
+              <button class="nav__btn" data-tab="#pricing">
+                <span class="nav__btn-title1">Loot</span>
+                <span class="nav__btn-title2">Pricing</span>
               </button>
             </li>
             <li class="nav__tab">
-              <button class="nav__btn" id="tab-process">
-                <span class="nav__tab-title1">Walkthrough</span>
-                <span class="nav__tab-title2">Process</span>
+              <button class="nav__btn" data-tab="#process">
+                <span class="nav__btn-title1">Walkthrough</span>
+                <span class="nav__btn-title2">Process</span>
               </button>
             </li>
           </ul>
         </nav>
       </header>
-      <div class="content">
-        <div class="content__info content__info_active" id="content-home">
+      <div class="content text_nova">
+        <div class="content__info content_active" id="greeting">
+          <p>
+            Hello! My name is Sarah Alice, nice to meet you! Welcome to my
+            website, I hope you have a lovely stay and a wonderful day!
+          </p>
+        </div>
+        <div class="content__info" id="home">
           <p>
             Hello! Alice here! Welcome to my dungeon— I mean website. I provide
             services related to software engineering such as website building
             and creating apps and programs.
           </p>
-          <p class="text_jp">
-            こんにちは！アリスです！あたしはソフトウェアエンジニアです！
+          <p>こんにちは！アリスです！あたしはソフトウェアエンジニアです！</p>
+        </div>
+        <div class="content__info" id="about">
+          <h2 class="content__heading">About me</h2>
+          <p>
+            I am a disabled transgender woman trying to survive in this world,
+            and this is my personal website! I love doing whatever I can to make
+            the people around me happy, and being able to create things for
+            people by doing the things I love is something I really enjoy.
+          </p>
+          <p>
+            I am not a fan of formality; I prefer to conduct myself with people
+            as I am as a person. So, while I may not necessarily be very
+            "business-like," I am genuine, caring, and strive to do my best. If
+            you have a vision that I can help create with you, then I would be
+            thrilled to do the best I can!
+          </p>
+          <h2 class="content__heading">Background</h2>
+          <p>
+            I am an avid video game enjoyer, especially within the RPG genres. I
+            have been playing video games for the vast majority of my life, and
+            I deeply want to create my own one day. I especially love MMOs, as
+            they really helped me socialize and make friends when I didn't have
+            much opportunity to in real life.
+          </p>
+          <p>
+            Getting to meet so many people from around the world was also a
+            wonderful experience, and I made many friends in several countries.
+            Some friends even with whom we didn't share a language, and I made
+            the effort to reach out to help people and socialize with those who
+            didn't know English by using Google Translate. The ability to play a
+            game you enjoy with so many people and meet others within it was
+            such a magical experience for me.
+          </p>
+          <p>
+            That truly instilled the desire to create my own world where many
+            people can adventure and explore together. It's truly a shame how
+            much monetization and other less than savory practices have invaded
+            the video game sphere. While I don't expect anything to come from my
+            own choices alone, I at least want to give back to the community a
+            world that is truly for the players—one that is purely just for
+            their enjoyment and to provide that same safe, comfortable space I
+            was given when I was younger.
           </p>
         </div>
-        <div class="content__info" id="content-about">
-          <p>About Information</p>
+        <div class="content__info" id="portfolio">
+          <h2 class="content__heading">Sarah Alice Art Gallery</h2>
+          <h3 class="content__heading">Work in progress.</h3>
+          <section class="gallery">
+            <!--First Independant Project-->
+            <div class="gallery__piece">
+              <div class="gallery__window">
+                <iframe
+                  src="a7ic3.github.io/first_independant_project"
+                  title="First Independant Project"
+                  scrolling="no"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <h3 class="portfolio__header">My First Independent Project</h3>
+            </div>
+          </section>
         </div>
-        <div class="content__info" id="content-portfolio">
-          <p>Portfolio Showcase</p>
-        </div>
-        <div class="content__info" id="content-pricing">
+        <div class="content__info" id="pricing">
           <p>Prices for Services</p>
         </div>
-        <div class="content__info" id="content-process">
-          <p>Typical Process for Services</p>
+        <div class="content__info" id="process">
+          <p>Process for Services</p>
         </div>
       </div>
     </div>

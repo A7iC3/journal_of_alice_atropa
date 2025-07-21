@@ -1,7 +1,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 92%;
+  max-width: 75em;
   margin: 0 auto;
   padding: 84px 42px;
   border: solid 4px;
@@ -12,6 +12,14 @@
   display: none;
 }
 
-.content__info_active {
-  display: block;
+.content__heading {
+  font-size: 20px;
+}
+
+.content_active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.1;
+  gap: 1em;
 }
