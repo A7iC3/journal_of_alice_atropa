@@ -31,7 +31,7 @@
 }
 
 .nav__tab:hover {
-  transform: translateY(-5px);
+  color: blueviolet;
 }
 
 .nav_active {

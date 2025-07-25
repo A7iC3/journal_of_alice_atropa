@@ -118,18 +118,40 @@
           <h2 class="content__heading">Sarah Alice Art Gallery</h2>
           <h3 class="content__heading">Work in progress.</h3>
           <section class="gallery">
-            <!--First Independant Project-->
-            <div class="gallery__piece">
-              <div class="gallery__window">
-                <iframe
-                  src="a7ic3.github.io/first_independant_project"
-                  title="First Independant Project"
-                  scrolling="no"
-                  loading="lazy"
-                ></iframe>
-              </div>
-              <h3 class="portfolio__header">My First Independent Project</h3>
-            </div>
+            <ul class="gallery__list">
+              <!--Gallery Template-->
+              <template id="gallery-template">
+                <li class="gallery__piece">
+                  <div class="gallery__window">
+                    <iframe
+                      class="gallery__iframe"
+                      loading="lazy"
+                      sandbox="allow-modals allow-scripts"
+                    ></iframe>
+                  </div>
+                  <h3 class="gallery__title">
+                    <a
+                      class="gallery__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></a>
+                  </h3>
+                </li>
+              </template>
+              <!--Gallery Preview Template-->
+              <template id="preview-template">
+                <li class="gallery__piece">
+                  <img class="gallery__preview" loading="lazy" />
+                  <h3 class="gallery__title">
+                    <a
+                      class="gallery__link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></a>
+                  </h3>
+                </li>
+              </template>
+            </ul>
           </section>
         </div>
         <div class="content__info" id="pricing">
