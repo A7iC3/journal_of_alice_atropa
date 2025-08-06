@@ -1,18 +1,18 @@
 .gallery__list {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 40%));
-  grid-template-rows: repeat(1fr);
+  grid-template-columns: 1fr;
   gap: 16px;
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .gallery__window {
   position: relative;
-  width: auto;
-  height: 0;
-  padding: 0 0 200% 0;
-  border: solid 1px;
+  aspect-ratio: 3/4;
+  width: 100%;
+  border: solid 2px;
+  overflow-y: scroll;
 }
 
 .gallery__iframe {
@@ -41,5 +41,12 @@
 }
 
 .gallery__preview {
+  display: block;
   width: 100%;
+}
+
+@media (min-width: 764px) {
+  .gallery__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
