@@ -27,6 +27,11 @@ const galleryLog = [
     link: "https://a7ic3.github.io/se_project_spots/",
     title: "Software Engineering Project Spots",
   },
+  {
+    name: "SE Project Todo App",
+    link: "https://a7ic3.github.io/se_project_todo-app/",
+    title: "Software Engineering Project Todo App",
+  },
 ];
 
 function changeTab(arg1) {
